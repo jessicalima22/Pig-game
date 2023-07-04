@@ -86,11 +86,13 @@ btnHold.addEventListener('click', function () {
 
 //set current values to zero
 const setValuesZero = function () {
-  console.log(document.querySelectorAll('.score').textContent);
+  console.log(document.querySelectorAll('.score')[0]);
   scores[0] = 0;
   scores[1] = 0;
-  document.querySelectorAll('.score').textContent = 0;
-  document.querySelectorAll('.current-score').textContent = 0;
+  document.querySelectorAll('.score')[0].textContent = 0;
+  document.querySelectorAll('.score')[1].textContent = 0;
+  document.querySelectorAll('.current-score')[0].textContent = 0;
+  document.querySelectorAll('.current-score')[1].textContent = 0;
 };
 
 //add function to button new game
@@ -101,11 +103,22 @@ btnNew.addEventListener('click', function () {
     document
       .querySelector(`.player--${activePlayer}`)
       .classList.remove('player--winner');
-    document
-      .querySelector(`.player--${activePlayer}`)
-      .classList.remove('player--active');
-    diceEl.classList.remove('hidden');
+
+    player1.classList.remove('player--active');
+    activePlayer = 0;
+    player0.classList.contains('player--active')
+      ? ''
+      : player0.classList.add('player--active');
+    currentScore = 0;
+    setValuesZero();
   } else {
+    diceEl.classList.add('hidden');
+    player1.classList.remove('player--active');
+    activePlayer = 0;
+    player0.classList.contains('player--active')
+      ? ''
+      : player0.classList.add('player--active');
+    currentScore = 0;
     setValuesZero();
   }
 });
