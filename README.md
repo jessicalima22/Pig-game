@@ -1,51 +1,48 @@
-# Pig Game 🎲🐷
+# 🎲 Pig Game 🐷
 
-A fun, interactive, two-player game built using HTML, CSS, and JavaScript. Players take turns rolling a dice and accumulating points in a race to win. The first player to reach a target score wins!
-
----
-
-## Features ✨
-- **Two-player mode**: Play with a friend and compete for the highest score.
-- **Interactive dice rolling**: Randomly roll a dice to earn points.
-- **Hold your score**: Decide when to secure your points and pass the turn.
-- **New game option**: Restart the game anytime with a fresh score.
+A fun and simple dice game for two players! This project demonstrates the use of HTML, CSS, and JavaScript to build an interactive and engaging browser-based game.
 
 ---
 
-## Project Structure 📂
+## 🌟 Features
 
-- **HTML**: Defines the structure of the game interface.
-- **CSS**: Styles the game layout and enhances the visual appeal.
-- **JavaScript**: Implements the game logic, including dice rolls, score calculations, and player turns.
-
-### File Overview
-- `index.html`: Main HTML file for the game interface.
-- `style.css`: Stylesheet for customizing the look and feel.
-- `script.js`: JavaScript file that powers the game logic and interactivity.
-- `dice-5.png`: Dice image used for the game.
+- Turn-based gameplay for two players.
+- Dice rolls with dynamic score calculation.
+- "Hold" feature to save points and switch turns.
+- Instant loss of turn when rolling a `1`.
 
 ---
 
-## How to Play 🕹️
-1. Open the game in a web browser.
-2. Player 1 starts the game.
-3. On your turn:
-   - Click **Roll Dice** to roll the dice.
-   - If the dice roll is `1`, your turn ends, and you lose any points accumulated in that turn.
-   - If it's not `1`, the rolled number is added to your current turn score.
-   - Click **Hold** to add your current score to your total score and pass the turn to the other player.
-4. The first player to reach the target score (default: 100) wins.
-5. Click **New Game** to reset scores and start a new game.
+## 🚀 How to Play
+
+1. Player 1 starts the game.
+2. Roll the dice to accumulate points for your turn.
+3. Choose to "Hold" and save your score or risk rolling the dice again.
+4. If you roll a `1`, your turn ends, and you lose any points accumulated during that turn.
+5. First player to reach 100 points wins!
 
 ---
 
-## Requirements 🖥️
-- A modern web browser (Chrome, Firefox, Edge, etc.)
-- JavaScript enabled.
+## 🎮 Play the Game Online
+
+Access the game directly via GitHub Pages:  
+👉 **[Pig Game on GitHub Pages](https://jessicalima22.github.io/Pig-game/)** 👈  
 
 ---
+
+## 🛠️ Technologies Used
+
+- **HTML5** for structure.
+- **CSS3** for styling and layout.
+- **JavaScript** for game logic and interactivity.
+
+---
+
+## 📂 Project Structure
+
+
 
 ## How to Run Locally 🚀
 1. Clone this repository to your local machine:
    ```bash
-   git clone https://github.com/yourusername/pig-game.git
+   git clone https://github.com/jessicalima22/pig-game.git
